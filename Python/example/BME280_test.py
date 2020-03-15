@@ -6,8 +6,6 @@ print("Start")
 while 1:
 	device.readData()
 	print ("temp : %-6.2f ℃" % (device.temperature) )
-	"""
-	print ("temp : %-6.2f ℃" % (device.temperature) )
 	print ("hum : %6.2f ％" % (device.var_h) )
 	print ("pressure : %7.2f hPa" % (device.pressure/100))
 
@@ -30,9 +28,6 @@ while 1:
 		print("寒い")
 
 	print("-"*20)
-	#time.sleep(0.01)
-	"""
-
 
 
 

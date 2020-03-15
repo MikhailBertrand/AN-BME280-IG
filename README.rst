@@ -4,6 +4,8 @@
 
 作成日:2018/05/01
 
+現在再編集中です。
+
 ■ 概要
 ------------------------------------------------------------------------
 
@@ -32,11 +34,21 @@ USBで手軽に大気中の温度／湿度／気圧　を計測します。
 ■ ライブラリインストール
 ------------------------------------------------------------------------
 
-git clone https://github.com/nonNoise/USB_StartUpModule.git
+・モジュールのType-C端子にケーブルを接続します。
 
-pip install PyMCP2221A
+・LEDの点灯を確認します。
 
-cd ./USB_StartUpModule/AN-USB-BME280/example
+・ソースを以下のコマンドでダウンロードします。
+
+git clone https://github.com/ArtifactNoise/AN-BME280-IG.git
+
+・ライブラリをインストールします。
+
+pip3 install PyMCP2221A
+
+・サンプルプログラムを実行します。
+
+cd ./AN-BME280-IG/Python/example
 
 python3 BME280_test.py
 
@@ -46,7 +58,7 @@ python3 BME280_test.py
 コマンドライン
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    https://github.com/nonNoise/USB_ScienceKit/blob/master/AN-USB-BME280/example/BME280_test.py
+    https://github.com/ArtifactNoise/AN-BME280-IG/blob/master/Python/example/BME280_test.py
 
 -   初期化
     
@@ -82,7 +94,7 @@ GUIアプリ
     :width: 480px
 
 
-https://github.com/nonNoise/USB_ScienceKit/blob/master/AN-USB-BME280/example/BME280_GUI.py
+https://github.com/ArtifactNoise/AN-BME280-IG/blob/master/Python/example/BME280_GUI.py
 
 
 KivyによるGUIアプリ
