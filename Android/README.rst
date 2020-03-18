@@ -46,34 +46,46 @@ build.gradleファイルに以下の一文を追加します。
 JAVA (Android ネイティブ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - 参照するクラス
-import com.example.artifactnoise_bme280.BME280;
+
+    import com.example.artifactnoise_bme280.BME280;
 
 - クラスの継承（MainActivityのthisActivityを継承させます)
-BME280 bme280 = new BME280(this);
+
+    BME280 bme280 = new BME280(this);
 
 - BME280　バージョンの読み出し
-String　VERSION()
+
+    String　VERSION()
 
 - BME280　ライセンス情報の読み出し
-String　LICENSE()
+
+    String　LICENSE()
 
 - BME280　初期化処理
-void Init()
+
+    void Init()
 
 - BME280　センサー取得値　更新コマンド
-void readData();
+
+    void readData();
 
 - BME280　室温の取得(セルシウス温度 ℃) 
-double Temperature();
+
+    double Temperature();
 
 - BME280　湿度の取得(相対湿度 %) 
-double Pressure();
+
+    double Pressure();
 
 - BME280　大気圧の取得(気圧値 Pa) 
-double Humidity ();
+
+    double Humidity ();
 
 - BME280　モジュールの状態取得（文字列）
-String STATE_String()
+    
+    String STATE_String()
+
+::
 
     // 初期状態
     "INIT"
@@ -94,7 +106,7 @@ String STATE_String()
 
 - 例：
 
-.. highlight:: JAVA
+::
 
     public class MainActivity extends AppCompatActivity {
         public static TextView textView;
