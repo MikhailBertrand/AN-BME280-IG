@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Environment measurement node -->
+  <node pkg="env_measurement_module" name="env_measurement" type="run_env_measurement.py" output="screen"/>
+</launch>
